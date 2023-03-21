@@ -21,7 +21,16 @@ public class LinedListMain {
         linkedList2.add(30);
         linkedList2.add(70);
         linkedList2.display();
-
+        System.out.println();
+        System.out.println("******  UC5  ******");
+        LinkedList<Integer> linkedList3 = new LinkedList<>();
+        linkedList3.add(56);
+        linkedList3.add(30);
+        linkedList3.add(70);
+        System.out.println("Before delete operation");
+        linkedList3.display();
+        linkedList3.DeleteFirstElement(56);
+        System.out.println("After delete operation");
+        linkedList3.display();
     }
-
 }

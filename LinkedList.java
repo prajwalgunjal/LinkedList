@@ -37,5 +37,14 @@ public class LinkedList<T> {
         }
     }
 
+    public void DeleteFirstElement(T deleted_element) {
+        deleted_element= head.Data;
+        if(head!=null){
+            head=head.next;
+        }
+        System.out.println();
+        System.out.println("deleted element is "+deleted_element);
+    }
+
 
 }
