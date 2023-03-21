@@ -64,6 +64,20 @@ public class LinedListMain {
         System.out.println("after insert");
         linkedList7.InsertAnywhere(40,30);
         linkedList7.display();
-
+        System.out.println();
+        System.out.println("******  UC9  ******");
+        LinkedList<Integer> linkedList8 = new LinkedList<>();
+        linkedList8.add(56);
+        linkedList8.add(30);
+        linkedList8.add(40);
+        linkedList8.add(70);
+        linkedList8.display();
+        System.out.println();
+        linkedList8.display();
+        System.out.println();
+        linkedList8.deleteanyelement(40);
+        linkedList8.display();
+        System.out.println();
+        linkedList8.getSize();
     }
 }
