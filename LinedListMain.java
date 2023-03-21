@@ -45,6 +45,12 @@ public class LinedListMain {
         linkedList4.display();
         LinkedList<Integer> linkedList5 = new LinkedList<>();
 //        linkedList5.DeleteFirstElement(10);
-
+        System.out.println();
+        System.out.println("******  UC7  ******");
+        LinkedList<Integer> linkedList6 = new LinkedList<>();
+        linkedList6.add(56);
+        linkedList6.add(30);
+        linkedList6.add(70);
+        linkedList6.search(70);
     }
 }
