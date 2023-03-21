@@ -14,6 +14,14 @@ public class LinedListMain {
         linkedList1.push(30);
         linkedList1.push(56);
         linkedList1.display();
+        System.out.println("");
+        System.out.println("******  UC3  ******");
+        LinkedList<Integer> linkedList2 = new LinkedList<>();
+        linkedList2.add(56);
+        linkedList2.add(30);
+        linkedList2.add(70);
+        linkedList2.display();
+
     }
 
 }
