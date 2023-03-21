@@ -52,5 +52,18 @@ public class LinedListMain {
         linkedList6.add(30);
         linkedList6.add(70);
         linkedList6.search(70);
+        System.out.println();
+        System.out.println("******  UC8  ******");
+        LinkedList<Integer> linkedList7 = new LinkedList<>();
+        linkedList7.add(56);
+        linkedList7.add(30);
+        linkedList7.add(70);
+        System.out.println("Before insert");
+        linkedList7.display();
+        System.out.println("");
+        System.out.println("after insert");
+        linkedList7.InsertAnywhere(40,30);
+        linkedList7.display();
+
     }
 }

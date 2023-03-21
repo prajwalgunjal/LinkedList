@@ -75,6 +75,7 @@ public class LinkedList<T> {
         }
     }
 
+
     public void search(T search) {
         Node <T> temp = head;
         boolean flag= false;
@@ -93,6 +94,26 @@ public class LinkedList<T> {
         else {
             System.out.println("element not found");
 
+        }
+    }
+
+    public void InsertAnywhere(T insert, T search) {
+        Node<T> newNode= new Node<>(insert);
+        Node<T> temp = head;
+        Node<T> temp2 = head;
+        while(temp!=null & temp2!=null){
+            if(temp.Data==search){
+                temp2=temp2.next;
+//                System.out.println(temp.Data);  //30
+//                System.out.println(temp2.Data);   //70
+                temp.next=newNode;
+                newNode.next=temp2;
+//                newNode.next=temp;
+//                temp.next=newNode;
+                System.out.println("Data inserted successfully!!");
+            }
+            temp=temp.next;
+            temp2=temp2.next;
         }
     }
 }
