@@ -38,7 +38,16 @@ public class LinkedList<T> {
     }
 
     public void DeleteFirstElement(T deleted_element) {
+//        if(head == null)
+//        {
+//            System.out.println("List is empty");
+//        }
         deleted_element= head.Data;
+        if(head==tail)
+        {
+            head=null;
+
+        }
         if(head!=null){
             head=head.next;
         }
@@ -47,4 +56,22 @@ public class LinkedList<T> {
     }
 
 
+    public void DeleteLastElement(T Delete_element) {
+        Node<T> temp = head;
+        Delete_element = tail.Data;
+        if (head == null) {
+            System.out.println("Lined list is empty");
+        }
+        if (head == tail) {
+            head = null;
+        } else {
+            while (temp.next != tail) {
+                temp = temp.next;
+            }
+            temp.next = null;
+            tail = temp;
+            System.out.println();
+            System.out.println("Deleted element is " + Delete_element);
+        }
+    }
 }
