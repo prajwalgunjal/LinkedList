@@ -127,6 +127,8 @@ public class LinkedList<T> {
         System.out.println("Size of the linked list is "+count);
     }
 
+
+
     public void deleteanyelement(T delete) {
         Node<T> temp = head;
         Node<T> temp2 = head;
@@ -147,4 +149,6 @@ public class LinkedList<T> {
             temp2=temp2.next;
         }
     }
+
+
 }

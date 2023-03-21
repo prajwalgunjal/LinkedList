@@ -79,5 +79,22 @@ public class LinedListMain {
         linkedList8.display();
         System.out.println();
         linkedList8.getSize();
+        System.out.println();
+        System.out.println("******  UC9  ******");
+        System.out.println("sorting");
+        SortedLinkedList sortedLinkedList = new SortedLinkedList();
+        sortedLinkedList.add(10);
+        sortedLinkedList.add(55);
+        sortedLinkedList.add(1);
+        sortedLinkedList.add(8);
+        sortedLinkedList.add(300);
+        sortedLinkedList.add(11);
+        System.out.println("Before sorting \n");
+        sortedLinkedList.display();
+        System.out.println();
+        System.out.println("After sorting");
+        sortedLinkedList.sort();
+        sortedLinkedList.display();
+
     }
 }
